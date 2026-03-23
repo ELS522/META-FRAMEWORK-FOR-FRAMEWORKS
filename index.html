@@ -207,7 +207,7 @@ button:hover {
   <input type="checkbox" id="principles"> Principles<br>
   <input type="checkbox" id="checklist"> Checklist<br>
   <input type="checkbox" id="rubric"> Rubric<br>
-  <input type="checkbox" id="mini"> Mini-framework Outline<br><br>
+ 
 
   <button onclick="nextToDetail()">Next</button>
   <button class="secondary" onclick="prev(1)">Previous</button>
@@ -627,10 +627,6 @@ function generateFramework() {
 
   if(document.getElementById("rubric").checked){
     btns += `<button onclick="showTemplate('rubricTemplate')">Rubric</button>`;
-  }
-
-  if(document.getElementById("mini").checked){
-    btns += `<button onclick="showTemplate('decisionTemplate')">Decision Tree</button>`;
   }
 
   document.getElementById("templateButtons").innerHTML = btns;
